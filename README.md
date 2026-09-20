@@ -149,9 +149,3 @@ Customer-Shopping-Behavior-Analysis/
 ## 🎯 Project Outcome
 
 This project demonstrates a complete **Data Analytics workflow** by combining Python for data preprocessing, PostgreSQL and SQL for business analysis, DAX for KPI calculations, and Power BI for interactive dashboard development. The final dashboard enables stakeholders to explore customer behavior and make data-driven business decisions.
-
-## 👨‍💻 Author
-
-**Sri Krishna Kowshik Nalliboina**
-
-M.Sc. Computer Science | Data Analytics & Power BI Portfolio Project
