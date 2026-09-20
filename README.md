@@ -1,90 +1,96 @@
 # 🛍️ Customer Shopping Behavior Analysis
 
-An end-to-end **Data Analytics** project that analyzes customer shopping behavior using **Python, PostgreSQL, SQL, and Power BI**. The project focuses on customer segmentation, revenue analysis, purchasing trends, and interactive business intelligence dashboards.
+An end-to-end **Data Analytics** project that analyzes customer shopping behavior using **Python, PostgreSQL, SQL, Power BI, and DAX**. The project uncovers customer purchasing patterns, revenue trends, product performance, and customer segmentation through an interactive business intelligence dashboard.
 
 ## 📊 Project Overview
 
-This project analyzes **3,900 retail transactions** to uncover valuable business insights, including:
+This project analyzes **3,900 retail transactions** across multiple product categories to generate actionable business insights. The complete workflow includes data cleaning, feature engineering, SQL analysis, DAX measure creation, and dashboard development in Power BI.
 
-* Customer spending patterns
-* Product category performance
-* Customer segmentation
-* Subscription behavior
-* Revenue trends across demographic groups
+### Objectives
 
-The final output is an interactive **Power BI dashboard** supported by data cleaning in Python and business analysis using SQL.
+* Analyze customer spending behavior
+* Identify high-performing products
+* Segment customers based on purchase history
+* Compare subscription and non-subscription customers
+* Build an interactive Power BI dashboard for decision-making
 
 ## 🛠️ Tech Stack
 
-* **Python** (Pandas)
-* **PostgreSQL**
-* **SQL**
-* **Power BI**
-* **DAX**
+| Technology | Purpose                             |
+| ---------- | ----------------------------------- |
+| Python     | Data Cleaning & Feature Engineering |
+| Pandas     | Data Manipulation                   |
+| PostgreSQL | Database Management                 |
+| SQL        | Business Analysis                   |
+| Power BI   | Interactive Dashboard               |
+| DAX        | KPI & Revenue Measures              |
 
-## 📁 Dataset
+## 📁 Dataset Information
 
-| Feature        |              Value |
-| -------------- | -----------------: |
-| Total Records  |              3,900 |
-| Total Columns  |                 18 |
-| Missing Values | 37 (Review Rating) |
+| Feature        | Value |
+| -------------- | ----: |
+| Total Records  | 3,900 |
+| Total Columns  |    18 |
+| Missing Values |    37 |
 
-### Key Attributes
+### Dataset Features
 
-* Customer demographics
-* Product category & items
-* Purchase amount
-* Shipping type
-* Discounts
-* Subscription status
-* Previous purchases
-* Review ratings
+* Customer demographics (Age, Gender, Location)
+* Product information (Item, Category, Color, Size)
+* Purchase details (Amount, Season, Shipping Type)
+* Shopping behavior (Discounts, Subscription, Previous Purchases)
+* Customer feedback (Review Rating)
 
 ## ⚙️ Data Preparation
 
-Data preprocessing was performed using **Python (Pandas)**.
+The dataset was preprocessed using **Python (Pandas)**.
+
+### Data Cleaning
 
 * Imported and explored the dataset
-* Handled missing values using median imputation
-* Standardized column names (snake_case)
+* Handled missing values in `review_rating`
+* Standardized column names using `snake_case`
+* Removed redundant attributes
+* Validated data consistency
+
+### Feature Engineering
+
 * Created **Age Group**
 * Created **Customer Segment** (New, Returning, Loyal)
-* Loaded cleaned data into PostgreSQL
+* Prepared the cleaned dataset for PostgreSQL
 
 ## 🗄️ SQL Business Analysis
 
-The following business questions were answered using SQL:
+The following business questions were solved using SQL:
 
-* Revenue by gender
-* High-spending discount users
-* Top-rated products
-* Shipping type comparison
-* Subscribers vs non-subscribers
-* Discount-dependent products
-* Customer segmentation
-* Top 3 products per category
-* Repeat buyers & subscriptions
-* Revenue by age group
+* Revenue by Gender
+* High-Spending Discount Users
+* Top Rated Products
+* Shipping Type Comparison
+* Subscriber vs Non-Subscriber Revenue
+* Discount-Dependent Products
+* Customer Segmentation
+* Top Products by Category
+* Repeat Buyers & Subscriptions
+* Revenue by Age Group
 
 ## 📈 Power BI Dashboard
 
 ### Dashboard Features
 
 * KPI Cards (Total Customers, Average Purchase Amount, Average Review Rating)
-* Subscription Distribution
 * Revenue by Product Category
 * Sales by Category
+* Subscription Distribution
 * Revenue by Age Group
 * Sales by Age Group
 * **Highest Revenue Products** (Top 5)
-* Interactive slicers for Gender, Category, Subscription Status, and Shipping Type
+* Interactive Filters (Gender, Category, Subscription Status, Shipping Type)
 
-> **Add your dashboard screenshot here:** `images/dashboard.png`
+> **Dashboard Preview:** Add a screenshot in the `images` folder and update the path below.
 
-## 📐 DAX Measures
+`![Dashboard](images/dashboard.png)`
 
-```DAX
 ## 📐 DAX Measures
 
 ```DAX
@@ -101,23 +107,21 @@ Total Revenue =
 SUM('public customer'[purchase_amount])
 ```
 
-```
-
 ## 💡 Key Insights
 
-* Clothing generated the highest revenue.
-* Young Adult customers contributed the largest share of sales.
+* Clothing generated the highest overall revenue.
+* Young Adult customers contributed the largest share of revenue.
 * Loyal customers represented the largest customer segment.
-* Express shipping showed a slightly higher average purchase value.
-* The Top 5 products accounted for a significant portion of total revenue.
+* Express shipping customers showed a slightly higher average purchase value.
+* The **Top 5 Products** contributed significantly to total revenue.
 
 ## 🚀 Business Recommendations
 
-* Introduce customer loyalty rewards.
-* Promote subscription benefits.
-* Highlight highest revenue products in campaigns.
-* Optimize discount strategies for profitability.
-* Target high-value customer segments with personalized marketing.
+* Implement customer loyalty programs to increase retention.
+* Promote subscription benefits to improve recurring purchases.
+* Prioritize marketing for the highest revenue products.
+* Optimize discount strategies to balance revenue and profitability.
+* Target high-value customer age groups with personalized campaigns.
 
 ## 📂 Project Structure
 
@@ -144,8 +148,10 @@ Customer-Shopping-Behavior-Analysis/
 
 ## 🎯 Project Outcome
 
-This project demonstrates the complete **Data Analytics workflow**—from data cleaning and feature engineering to SQL-based business analysis, DAX measure creation, and interactive dashboard development using Power BI.
+This project demonstrates a complete **Data Analytics workflow** by combining Python for data preprocessing, PostgreSQL and SQL for business analysis, DAX for KPI calculations, and Power BI for interactive dashboard development. The final dashboard enables stakeholders to explore customer behavior and make data-driven business decisions.
 
----
+## 👨‍💻 Author
 
-**Author:** Sri Krishna Kowshik Nalliboina
+**Sri Krishna Kowshik Nalliboina**
+
+M.Sc. Computer Science | Data Analytics & Power BI Portfolio Project
