@@ -85,13 +85,22 @@ The following business questions were answered using SQL:
 ## 📐 DAX Measures
 
 ```DAX
-Total Customers = DISTINCTCOUNT(CustomerID)
+## 📐 DAX Measures
 
-Average Purchase Amount = AVERAGE(PurchaseAmount)
+```DAX
+Total Customers =
+COUNT('public customer'[customer_id])
 
-Average Review Rating = AVERAGE(ReviewRating)
+Average Purchase Amount =
+AVERAGE('public customer'[purchase_amount])
 
-Total Revenue = SUM(PurchaseAmount)
+Average Review Rating =
+AVERAGE('public customer'[review_rating])
+
+Total Revenue =
+SUM('public customer'[purchase_amount])
+```
+
 ```
 
 ## 💡 Key Insights
