@@ -139,4 +139,4 @@ This project demonstrates the complete **Data Analytics workflow**—from data c
 
 ---
 
-**Author:** Sri Krishna Kowshik
+**Author:** Sri Krishna Kowshik Nalliboina
